@@ -539,7 +539,7 @@
 
 		if("mute")
 			if(!phone_radio.is_on())
-				return TRUE
+				return FALSE
 			phone_radio.set_broadcasting(!phone_radio.get_broadcasting())
 			balloon_alert(user, "[!phone_radio.get_broadcasting() ? "muted" : "unmuted"]!")
 
